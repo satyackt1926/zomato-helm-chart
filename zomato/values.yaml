@@ -1,0 +1,10 @@
+replicaCount: 3
+image:
+  repository: kastrov/zomato
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  type: LoadBalancer
+  port: 3000
+containerPort: 3000
+appLabel: zomato
